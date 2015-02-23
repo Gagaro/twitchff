@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="css/style/buttons.css" rel="stylesheet" type="text/css">
+    <link href="css/style/input_areas.css" rel="stylesheet" type="text/css">
+    <link href="css/style/tabs.css" rel="stylesheet" type="text/css">
+    <link href="css/style/lists.css" rel="stylesheet" type="text/css">    
+    <link href="css/gaia-icons-master/gaia-icons-embedded.css" rel="stylesheet" type="text/css">
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="twitchff.js"></script>
+  </head>
+  <body>
+
+    <ul role="tablist" class="bb-tablist">
+      <li id="search" role="presentation">
+	<a id="tab-search" class="icon" href="#search" data-icon="find" role="tab" aria-controls="tabpanel-search">find</a>
+	<div id="tabpanel-search" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab-search">
+	  <form>
+	    <p>
+	      <input placeholder="http://twitch.tv/" type="text" id="stream" />
+	    </p>
+	    <p>
+	      <button class="bb-button recommend" id="search-btn">Search</button>
+	    </p>
+	  </form>
+	</div>
+      </li>
+
+
+      <li id="live" role="presentation">
+	<a id="tab-live" class="icon" href="#live" data-icon="play" role="tab" aria-controls="tabpanel-live">live</a>
+	<div id="tabpanel-live" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab-live">
+	  <div id="success" style="display: none;">
+	    <img src="#" alt="logo" id="logo" />
+	    <img src="#" alt="preview" id="preview" />
+	  </div>
+	  <div id="offline" style="display: none;">
+	    Offline
+	  </div>
+	  <div id="error" style="display: none;">
+	    Error
+	  </div>
+	</div>
+      </li>
+
+
+      <li id="videos" role="presentation">
+	<a id="tab-videos" class="icon" href="#videos" data-icon="videos" role="tab" aria-controls="tabpanel-videos">videos</a>
+	<div id="tabpanel-videos" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab-videos">
+	  <div id="past_broadcast">
+	    <section data-type="list">
+	      <ul>
+	      </ul>
+	    </section>
+	  </div>
+	</div>
+      </li>
+
+
+    </ul>
+
+  </body>
+</html>
